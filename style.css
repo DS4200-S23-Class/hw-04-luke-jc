@@ -8,3 +8,24 @@ body {
 .centered {
 	text-align: center;
 }
+
+/* create two unequal columns */
+.column {
+	float: left;
+	padding: 10px;
+}
+
+.left {
+	width: 60%;
+}
+
+.right {
+	width: 40%;
+}
+
+/* clear floats after the columns */
+.row:after {
+	content: "";
+	dispay: table;
+	clear: both;
+}
