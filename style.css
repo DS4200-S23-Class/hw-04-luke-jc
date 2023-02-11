@@ -29,3 +29,15 @@ body {
 	dispay: table;
 	clear: both;
 }
+
+circle {
+	fill: blue;
+}
+
+circle:hover {
+	fill: red;
+}
+
+.point {
+	stroke: green;
+}
