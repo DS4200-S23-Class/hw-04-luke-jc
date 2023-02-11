@@ -1,4 +1,11 @@
 
+/* create foundation for multiple columns */
+* {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /* set font of page to arial */
 body {
 	font-family: Arial;
@@ -9,20 +16,28 @@ body {
 	text-align: center;
 }
 
-/* create two unequal columns */
-.column {
-	float: left;
-	padding: 10px;
+.maincont {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
 }
 
-.left {
+.lcol,
+.rcol {
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+.lcol {
 	width: 60%;
 }
 
-.right {
+.rcol {
 	width: 40%;
 }
 
+<<<<<<< HEAD
 /* clear floats after the columns */
 .row:after {
 	content: "";
@@ -41,3 +56,5 @@ circle:hover {
 .point {
 	stroke: green;
 }
+=======
+>>>>>>> 1a3d32b50f79942e62dffafd1ad3d4c769b93a59
