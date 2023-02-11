@@ -3,3 +3,8 @@
 body {
 	font-family: Arial;
 }
+
+/* class to center elements */
+.centered {
+	text-align: center;
+}
