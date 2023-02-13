@@ -37,11 +37,10 @@ body {
 	width: 40%;
 }
 
-<<<<<<< HEAD
 /* clear floats after the columns */
 .row:after {
 	content: "";
-	dispay: table;
+	display: table;
 	clear: both;
 }
 
@@ -53,8 +52,7 @@ circle:hover {
 	fill: red;
 }
 
-.point {
-	stroke: green;
+.stroke {
+	stroke: yellowgreen;
+	stroke-width: 2px;
 }
-=======
->>>>>>> 1a3d32b50f79942e62dffafd1ad3d4c769b93a59
