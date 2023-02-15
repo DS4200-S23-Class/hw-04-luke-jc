@@ -56,3 +56,7 @@ circle:hover {
 	stroke: yellowgreen;
 	stroke-width: 2px;
 }
+
+button {
+	margin: 10px;
+}

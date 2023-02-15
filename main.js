@@ -1,4 +1,3 @@
-
 // JS File for Homework 4: Event Handling
 // Luke Abbatessa and Jocelyn Ju
 // Last Modified: 01.15.2023
@@ -27,3 +26,32 @@ function borderClick(ptID) {
 		element.classList.add("stroke")
 	}
 }
+
+function pointClick() {
+	let svgns = "http://www.w3.org/2000/svg", 
+		container = document.getElementById("cont");
+
+	let xcoords = document.getElementsByName("x-coords");
+	let ycoords = document.getElementsByName("y-coords");
+
+	for (let i = 0; i < xcoords.length; i++) {
+		for (let j = 0; j < ycoords.length; j++) {
+			if (xcoords[i].checked && ycoords[j].checked) {
+
+				console.log(xcoords[i].value);
+				console.log(ycoords[j].value);
+
+				let circle = document.createElementNS(svgns, 'circle');
+				// circle.setAttributeNS(null, 'class', 'point');
+				// circle.setAttributeNS(null, 'id', '(' + String(vals[i].value) + ', ' + String(vals[j].value) + ')');
+				circle.setAttributeNS(null, 'cx', (xcoords[i].value * 20));
+				circle.setAttributeNS(null, 'cy', ((ycoords[j].value * -20) + 200));
+				circle.setAttributeNS(null, 'r', 5);
+				// circle.setAttributeNS(null, 'onclick', borderClick('(' + String(vals[i].value) + ', ' + String(vals[j].value) + ')'));
+				container.appendChild(circle);
+			}
+		}
+	}
+}
+
+document.getElementById("subButton").addEventListener('click', pointClick);
