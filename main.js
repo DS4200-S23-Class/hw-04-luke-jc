@@ -32,8 +32,8 @@ function pointClick() {
 
 	// get the coordinates of the new point from the user's selection
 	let xcoords = document.getElementById("x-coords");
-	let ycoords = document.getElementById("y-coords");
 	let xcoord = Number(xcoords.options[xcoords.selectedIndex].text);
+	let ycoords = document.getElementById("y-coords");
 	let ycoord = Number(ycoords.options[ycoords.selectedIndex].text);
 
 	let newptID = "(" + xcoord + ", " + ycoord + ")"
