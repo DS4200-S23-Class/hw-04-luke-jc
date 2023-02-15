@@ -16,12 +16,14 @@ body {
 	text-align: center;
 }
 
+/* class signifying whole extent of page */
 .maincont {
 	margin-left: 0px;
 	margin-right: 0px;
 	width: 100%;
 }
 
+/* classes signifying left and right columns, respectively */
 .lcol,
 .rcol {
 	display: inline;
@@ -44,6 +46,7 @@ body {
 	clear: both;
 }
 
+/* tag styling the points of the graph */
 circle {
 	fill: blue;
 }
@@ -57,6 +60,7 @@ circle:hover {
 	stroke-width: 2px;
 }
 
+/* tag styling the "Add point" button */
 button {
 	margin: 10px;
 }
