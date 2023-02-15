@@ -27,7 +27,10 @@ function borderClick(ptID) {
 	}
 }
 
+// function to add new points and set their ids
 function pointClick() {
+
+	// get the coordinates of the new point from the user's selection
 	let xcoords = document.getElementById("x-coords");
 	let ycoords = document.getElementById("y-coords");
 	let xcoord = Number(xcoords.options[xcoords.selectedIndex].text);
@@ -37,6 +40,7 @@ function pointClick() {
 
 	let container = document.getElementById("cont");
 	
+	// create the point and set attributes
 	let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 	circle.setAttribute("class", "point");
 	circle.setAttribute("id", newptID);
